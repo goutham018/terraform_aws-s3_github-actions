@@ -22,7 +22,6 @@ resource "aws_s3_bucket_object" "sample_file" {
   bucket = aws_s3_bucket.task_bucket.bucket
   key    = "sample.txt"
   source = "sample.txt"
-  acl    = "public-read"
 }
 
 output "bucket_name" {
